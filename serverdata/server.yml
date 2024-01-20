@@ -1,0 +1,7 @@
+port: 25565
+motd: A Minecraft Server
+onlinemode: false
+viewdistance: 10
+compressionthreshold: 256
+versionprotocol: 755
+versionname: 1.20.4

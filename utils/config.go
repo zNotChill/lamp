@@ -15,6 +15,7 @@ type ServerConfig struct {
 	CompressionThreshold int
 	VersionProtocol      int
 	VersionName          string
+	MaxPlayers           int
 }
 
 func LoadConfig() ServerConfig {

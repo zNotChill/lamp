@@ -77,6 +77,7 @@ func HandleHandshake(packet packets.Packet, conn net.Conn, client *ProtocolClien
 		}
 		data := protocol.SerializeJSONToBytes(json)
 
+		utils.Info("Sending status response to " + conn.RemoteAddr().String())
 		if err := client.WritePacket(0x00, data); err != nil {
 			utils.Error("Failed to write packet")
 		}
